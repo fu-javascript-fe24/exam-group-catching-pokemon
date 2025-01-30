@@ -1,3 +1,5 @@
+![bulbasaur](./assets/background.png)
+
 # Gruppexamination: Catching Pokémon
 
 Välkommen, blivande Pokémon-mästare! 🌟
