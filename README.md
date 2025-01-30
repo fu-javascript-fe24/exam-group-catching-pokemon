@@ -60,6 +60,10 @@ För att nå godkänt betyg:
 
 Tips! Även om arbetssättet är lämpat för att man skall kunna sitta och jobba parallellt med kod så tycker jag att ni bör sitta tillsammans, dela skärm, prata, diskutera, och turas om med vem som kodar just nu. Vi är inte riktigt där ännu att vi kan släppa lös alla på egen hand.
 
+## Handledning
+
+Sköter vi på Discord. Tagga mig i handledningskanalen under de timmar som ni normalt sett har lektionstid. Eftersom detta är ert första riktiga kodprojekt där ni tvingas tänka mycket själva så kommer jag vara ganska generös med hjälp, MEN då krävs det att man gjort ett grundligt arbete och försökt själv först. 
+
 ## Inlämning
 
 Lämna in länken till ert grupprepo på Azomo senast kl 23:59, torsdagen den 6 februari. Glöm inte att ALLA i gruppen måste lämna in länken. Sen inlämning resulterar i att man hamnar i komplettering, och kompletteringsperioden pågår i 2 veckor från det att rättningarna publicerats.
