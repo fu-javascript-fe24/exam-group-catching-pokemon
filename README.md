@@ -18,7 +18,7 @@ Men var försiktig… 😨 Om du av misstag nuddar en Pokémon du redan har fån
   - Tränaren måste ha bockat i om hen är en pojke eller en flicka
 * Vid lyckad validering skall spelet starta, vid misslyckad validering meddelas användaren om exakt vad som gick snett
 * Under tiden spelet pågår skall spelmusik spelas
-* 10 slumpmässigt utvalda pokemons (av 151 stycken) skall slumpas ut på skärmen (inga dubletter!)
+* 10 slumpmässigt utvalda pokemons (av 151 stycken) skall slumpas ut på skärmen
 * Bilderna skall ha en bredd och höjd på 300px.
 * Var 3e sekund får varje pokemon en ny position
 * När man hovrar över en pokemon så fångas den i en pokeboll
