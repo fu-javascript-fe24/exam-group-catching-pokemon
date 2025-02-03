@@ -12,6 +12,17 @@ img {
     transition: all 3s linear;
 }
 
+body {
+    background-image: url(../assets/arena-background.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
 .form-wrapper {
     display: flex;
     justify-content: center;
@@ -19,48 +30,53 @@ img {
     width: 100%;
     height: 100vh;
     align-items: center;
-
-    .form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding: 1.5rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        width: 40%;
-        font-size: 1.5rem;
-        background-color: hsla(0, 0%, 100%, 0.5);
-        border-radius: 15px;
-        font-weight: 600;
-
-        p {
-            align-self: flex-start;
-        }
-
-        .gender {
-            display: flex;
-            gap: 2rem;
-            align-self: flex-start;
-        }
-        button {
-            background-color: red;
-            color: white;
-            padding: 0.5rem;
-            border-radius: 15px;
-            font-size: 1.5rem;
-            height: 4rem;
-            border: none;
-            width: 100%;
-        }
-    
-        #nick, #age {
-            border-radius: 15px;
-            padding: 0.5rem;
-            width: 100%;
-            height: 3rem;
-            border: none;
-        }
-    }
 }
 
+.form, .game-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 40%;
+    font-size: 1.5rem;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 15px;
+    font-weight: 600;
+
+    p {
+        align-self: flex-start;
+    }
+
+    .gender {
+        display: flex;
+        gap: 2rem;
+        align-self: flex-start;
+    }
+    button {
+        background-color: red;
+        color: rgb(255, 255, 255);
+        padding: 0.5rem;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        height: 4rem;
+        border: none;
+        width: 100%;
+    }
+
+    #nick, #age {
+        border-radius: 15px;
+        padding: 0.5rem;
+        width: 100%;
+        height: 3rem;
+        border: none;
+    }
+
+    .high-score {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
