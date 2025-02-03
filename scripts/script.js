@@ -19,33 +19,39 @@ const log = (msg) => console.log(msg);
 // }   
 
 
-oGameData.trainerName = document.querySelector (`#nick`).value;
-oGameData.trainerAge = document.querySelector (`#age`).value;
+let errorMsg = document.createElement(`p`);
+errorMsg.id = `errorMsg`;
+errorMsg.style.color = `red`;
 
-
+const submitBtnRef = document.querySelector(`#submitBtn`);
+    submitBtnRef.insertAdjacentElement("afterend", errorMsg);
 
 function validateForm(event) {
-    let errorMsg = document.createElement(`p`);
-    errorMsg.id = `errorMsg`;
-    errorMsg.style.color = `red`;
-
-    const submitBtnRef = document.querySelector(`#submitBtn`);
-    submitBtnRef.insertAdjacentElement("afterend", errorMsg);
+    oGameData.trainerName = document.querySelector (`#nick`).value;
+    oGameData.trainerAge = document.querySelector (`#age`).value;
+    log(oGameData.trainerName.length);
+    log(oGameData.trainerAge);
 
     try {
     if(oGameData.trainerName.length < 5) {
-        alert (`Your IRL name cannot possibly be that short... change name.`);
+        throw new Error (`Your IRL name cannot possibly be that short... change name.`);
         
     } else if (oGameData.trainerName.length > 10) {
-        alert (`Seriously? that name is way too long! Get a shorter one.`);
+        throw new Error (`Seriously? that name is way too long! Get a shorter one.`);
+    } else {
+        log(errorMsg.textContent);
+        errorMsg.textContent = '';
     }
 
 
-    if(oGameData.trainerAge.value < 10) {
-        alert (`You're too young for this... wait a few years and try again.`);
+    if(oGameData.trainerAge < 10) {
+        throw new Error (`You're too young for this... wait a few years and try again.`);
         
-    } else if (oGameData.trainerAge.value > 15) {
-        alert (`You are way too old for Pokémon! (for legal reasons... that was a joke)`);
+    } else if (oGameData.trainerAge > 15) {
+        throw new Error (`You are way too old for Pokémon! (for legal reasons... that was a joke)`);
+    } else {
+        log(errorMsg.textContent);
+        errorMsg.textContent = '';
     }
 
     const genderRadios = document.querySelectorAll(`input[name="gender"]`);
@@ -64,7 +70,6 @@ function validateForm(event) {
     errorMsg.textContent = ``;
 } catch (error) {
     errorMsg.textContent = error.message;
-    alert(error.message);
     log(error.message);
     event.preventDefault();
     }
