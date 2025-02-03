@@ -2,7 +2,7 @@ const log = (msg) => console.log(msg);
 
 // I denna fil skriver ni all er kod
 
-document.querySelector(`#form`).addEventListener(`submit`, function (event) {
+function validateForm(event) {
   let errorMsg = document.createElement(`p`);
   errorMsg.id = `errorMsg`;
   errorMsg.style.color = `red`;
@@ -31,4 +31,6 @@ document.querySelector(`#form`).addEventListener(`submit`, function (event) {
     log(error.message);
     event.preventDefault();
   }
-});
+}
+
+document.querySelector(`#form`).addEventListener(`submit`, validateForm);
